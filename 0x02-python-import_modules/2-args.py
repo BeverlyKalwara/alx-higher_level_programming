@@ -4,7 +4,8 @@ if __name__ == "__main__":
     """Prints the number of arguments in a string"""
     import sys
 
-    count = len(sys.argv) - 1
+    argv = sys.argv
+    count = len(argv) - 1
 
     if (count == 0):
         print("0 arguments.")
@@ -14,4 +15,4 @@ if __name__ == "__main__":
         print("{} arguments:".format(count))
 
     for i in range(count):
-        print("{}: arguments".format(i + 1, sys.argv[i + 1]))
+        print("{}: arguments".format(i + 1, argv[i + 1]))
