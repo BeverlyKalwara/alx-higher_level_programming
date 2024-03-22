@@ -9,6 +9,6 @@ if __name__ == "__main__":
     if (length == 0):
         sum = 0
     else:
-        for i in range (1, length):
+        for i in range (length):
             sum += int(sys.argv[i + 1])
-        print("{}".format(sum))
+    print("{}".format(sum))
